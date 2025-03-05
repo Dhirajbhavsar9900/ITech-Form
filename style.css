@@ -16,13 +16,11 @@ body {
 
 .container {
     padding: 20px;
-    width: 80%;
-    max-width: 900px;
+    width: 90%;
+    max-width: 800px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    overflow: hidden;
 }
 
 form {
@@ -33,8 +31,8 @@ form {
 .head h2 {
     text-align: center;
     color: #333;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .ExampleText {
@@ -46,13 +44,14 @@ form {
 }
 
 .ExampleText span {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #333;
     margin-bottom: 10px;
     display: block;
 }
 
-.ExampleText input[type="text"] {
+.ExampleText input[type="text"], 
+.ExampleText select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -69,37 +68,29 @@ form {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-top: 10px;
     transition: background-color 0.3s ease;
+    width: 100%;
 }
 
 .ExampleText button:hover {
     background-color: #45a049;
 }
 
-.ExampleText input[type="radio"], .ExampleText input[type="checkbox"] {
+.ExampleText input[type="radio"], 
+.ExampleText input[type="checkbox"] {
     margin-right: 10px;
 }
 
 .ExampleText label {
-    font-size: 1.1rem;
-    color: #333;
-    margin-right: 15px;
-}
-
-.ExampleText select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
     font-size: 1rem;
     color: #333;
+    margin-right: 10px;
 }
 
 .ExampleText div {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .ExampleText button:nth-of-type(2) {
@@ -110,3 +101,21 @@ form {
 .ExampleText button:nth-of-type(2):hover {
     background-color: #007B9E;
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .head h2 {
+        font-size: 1.2rem;
+    }
+
+    .ExampleText button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .ExampleText span
