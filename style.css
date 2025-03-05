@@ -1,121 +1,125 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-    padding: 20px;
-    width: 90%;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .head h2 {
-    text-align: center;
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
 .ExampleText {
-    background-color: aliceblue;
-    padding: 20px;
-    text-align: left;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: aliceblue;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .ExampleText span {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 10px;
-    display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
 }
 
-.ExampleText input[type="text"], 
+.ExampleText input[type="text"],
 .ExampleText select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #333;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
 }
 
 .ExampleText button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-    width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  width: 100%;
 }
 
 .ExampleText button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
-.ExampleText input[type="radio"], 
+.ExampleText input[type="radio"],
 .ExampleText input[type="checkbox"] {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .ExampleText label {
-    font-size: 1rem;
-    color: #333;
-    margin-right: 10px;
+  font-size: 1rem;
+  color: #333;
+  margin-right: 10px;
 }
 
 .ExampleText div {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .ExampleText button:nth-of-type(2) {
-    background-color: #008CBA;
-    transition: background-color 0.3s ease;
+  background-color: #008cba;
+  transition: background-color 0.3s ease;
 }
 
 .ExampleText button:nth-of-type(2):hover {
-    background-color: #007B9E;
+  background-color: #007b9e;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    .container {
-        width: 95%;
-        padding: 15px;
-    }
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
 
-    .head h2 {
-        font-size: 1.2rem;
-    }
+  .head h2 {
+    font-size: 1.2rem;
+  }
 
-    .ExampleText button {
-        font-size: 0.9rem;
-        padding: 8px 15px;
-    }
+  .ExampleText button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
 
-    .ExampleText span
+  .ExampleText span,
+  .ExampleText label {
+    font-size: 0.9rem;
+  }
+}
