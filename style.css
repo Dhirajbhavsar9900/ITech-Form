@@ -1,141 +1,120 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body {
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
-
 .container {
-    width: 100%;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
 }
-
 .head h2 {
-    text-align: center;
-    color: #333;
-    font-size: 1.6rem;
-    margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
 }
-
 .ExampleText {
-    background-color: aliceblue;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.row span {
+  font-size: 1rem;
+  color: #333;
+  flex-shrink: 0;
+  width: 150px;
+}
+.row a,
+.row input,
+.row select,
+.row button,
+.row label {
+  font-size: 1rem;
+}
+.row input,
+.row select {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.row button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.ExampleText span {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 8px;
-    display: block;
+.submit-btn {
+  background-color: #ff9800;
+  color: white;
+}
+.submit-btn:hover {
+  background-color: #e68900;
 }
 
-.ExampleText input[type="text"], 
-.ExampleText select {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #333;
+#doubleClickBtn {
+  background-color: #008cba;
+  color: white;
+}
+#doubleClickBtn:hover {
+  background-color: #007b9e;
 }
 
-.ExampleText button {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+#alertBtn {
+  background-color: #4caf50;
+  color: white;
+}
+#alertBtn:hover {
+  background-color: #45a049;
 }
 
-.ExampleText button:hover {
-    background-color: #45a049;
+.radio-group,
+.buttonCheck {
+  display: flex;
+  gap: 15px;
 }
-
-.ExampleText input[type="radio"], 
-.ExampleText input[type="checkbox"] {
-    margin-right: 8px;
-}
-
-.ExampleText label {
-    font-size: 1rem;
-    color: #333;
-    margin-right: 10px;
-}
-
-.ExampleText div {
-    margin-bottom: 15px;
-}
-
-.ExampleText button:nth-of-type(2) {
-    background-color: #008CBA;
-}
-
-.ExampleText button:nth-of-type(2):hover {
-    background-color: #007B9E;
+.radio-group label,
+.buttonCheck label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 @media (max-width: 600px) {
-    .container {
-        width: 95%;
-        padding: 20px;
-    }
-
-    .head h2 {
-        font-size: 1.3rem;
-    }
-
-    .ExampleText {
-        padding: 15px;
-    }
-
-    .ExampleText button {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    .ExampleText span, .ExampleText label {
-        font-size: 0.9rem;
-    }
-}
-
-
-@media (min-width: 601px) and (max-width: 900px) {
-    .container {
-        width: 85%;
-    }
-
-    .head h2 {
-        font-size: 1.5rem;
-    }
-
-    .ExampleText {
-        padding: 20px;
-    }
-}
-@media (min-width: 901px) {
-    .container {
-        max-width: 700px;
-    }
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+  .head h2 {
+    font-size: 1.3rem;
+  }
+  .row span {
+    width: 100%;
+  }
 }
